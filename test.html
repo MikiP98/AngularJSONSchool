@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Your best hire!</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <div class="triangle"></div>
+  <div class="triangle2"></div>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      min-height: 0;
+      min-width: 0;
+    }
+    
+    body {
+      padding: 2vh;
+    }
+
+    /* .triangle {
+      --size: 100px;
+      height: var(--size);
+      width: var(--size);
+  
+      border-left: var(--size) solid transparent;
+      border-right: var(--size) solid transparent;
+      border-bottom: calc(2 * + var(--size) * 0.866) solid green;
+      border-top: var(--size) solid transparent;
+      display: inline-block;
+  
+      background-color: green;
+    } */
+    .triangle {
+      --size: 200px;
+
+      height: 0;
+      width: 0;
+
+      border-style: solid;
+  
+      border-width: 0 calc(var(--size) * 0.5) calc(var(--size) * 0.866) calc(var(--size) * 0.5);
+
+      border-color: transparent transparent #FF4532 transparent;
+  
+      /* background-color: green; */
+    }
+    .triangle2 {
+      width: 0px;
+      height: 0px;
+      border-style: solid;
+      border-width: 0 100px 173.2px 100px;
+      border-color: transparent transparent #FF4532 transparent;
+      transform: rotate(0deg);
+    }
+  </style>
+</body>
+</html>

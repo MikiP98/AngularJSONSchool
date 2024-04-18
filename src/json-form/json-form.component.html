@@ -1,0 +1,10 @@
+<form *ngIf="jsonData" (ngSubmit)="submitForm()">
+  <div *ngFor="let field of formFields">
+    <label for="{{ field.label }}">{{ field.label }}:</label>
+    <select *ngIf="field.type === 'select'" id="{{field.label}}">
+      <option *ngFor="let option of field.options" [value]="option">{{ option }}</option>
+    </select>
+    <input *ngIf="field.type !== 'select'" type="{{field.type}}" id="{{field.label}}">
+  </div>
+  <input type="submit">
+</form>

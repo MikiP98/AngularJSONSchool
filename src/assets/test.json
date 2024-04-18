@@ -1,0 +1,5 @@
+{
+"ala" : {"type":"text"},
+"ma": {"type":"number"},
+"kota":{"type":"select","options":["a","b","c"]} 
+}
